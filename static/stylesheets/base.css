@@ -138,11 +138,14 @@ h3 {
 }
 
 h1 {
-  font-size: 5.6rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.75rem;
+}
+.content-block-a{
+  color: #DEFAEF;
 }
 
 h3 {
@@ -153,10 +156,20 @@ h4 {
   font-size: 2.4rem;
 }
 
+h5 {
+  font-size: 2rem;
+  
+  }
+
 p {
   font-size: 1.6rem;
   line-height: 1.6;
 }
+
+.content-block-c {
+  color: #DEFAEF;
+}
+
 
 small {
   font-size: 1.4rem;
@@ -192,22 +205,34 @@ small {
 
 /* Buttons */
 .button {
-  background-color: #e4f8ee;
+  background-color: #442ab9;
   padding: 2rem 3rem;
   display: inline-block;
   position: relative;
   font-size: 1.6rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+}
+
+.button-fontcolor {
+  align-items: center;
+  color: #fff;
+
+}
+
+.button-nav {
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+
 }
 
 .button--dark {
   background-color: #442ab9;
   color: #fff;
 }
-
 /* Header */
 .header {
   margin-top: 6.4rem;
-  text-align: center;
 }

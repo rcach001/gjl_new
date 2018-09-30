@@ -7,20 +7,38 @@
         <h1>{{ page.hero.heading }}</h1>
         <p>{{ page.hero.text }}</p>
 
-        <a href="{{ page.hero.button.url }}" class="button">{{ page.hero.button.text }}</a>
+        <a href="{{ page.hero.button.url }}" class="button button-fontcolor">{{ page.hero.button.text }}</a>
       </div>
     </div>
   </div>
 
-  <div class="content-block">
+  <div class="thumb-list thumb-list--three">
     <div class="container">
-      <div>
-        <h2>{{ page.introduction.heading }}</h2>
-        <p>{{ page.introduction.text }}</p>
-      </div>
+      <h2 class="heading">Featured Jobs</h2>
+      <hr>
+
+      <ul>
+        {% for post in page.featuredPosts %}
+          <li>
+            <a href="{{ post | route('post') }}" class="tout">
+              <div>
+                <img src="{{ post.featureImage | image }}">
+              </div>
+
+              <div class="tout__content color">
+                <h5>{{ post.title }}</h5>
+                <p>
+                  <time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time>
+                </p>
+                <p>{{ post.deck }}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
       <div>
-        <img src="{{ page.introduction.image | image }}">
+        <a href="/blog" class="button button-fontcolor">View all</a>
       </div>
     </div>
   </div>
@@ -40,7 +58,8 @@
 
   <div class="thumb-list thumb-list--three">
     <div class="container">
-      <h2 class="heading">Featured Posts</h2>
+      <h2 class="heading">More Jobs</h2> <!-- need to really make this its own list of posts -->
+      <hr>
 
       <ul>
         {% for post in page.featuredPosts %}
@@ -50,8 +69,8 @@
                 <img src="{{ post.featureImage | image }}">
               </div>
 
-              <div class="tout__content">
-                <h4>{{ post.title }}</h4>
+              <div class="tout__content color">
+                <h5>{{ post.title }}</h5>
                 <p>
                   <time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time>
                 </p>
@@ -62,11 +81,28 @@
         {% endfor %}
       </ul>
 
-      <div class="button-container">
-        <a href="/blog" class="button">View all posts</a>
+      <div>
+        <a href="/blog" class="button button-fontcolor">View all</a>
       </div>
     </div>
   </div>
+
+
+
+  <div class="content-block">
+    <div class="container">
+      <div>
+        <h2>{{ page.introduction.heading }}</h2>
+        <p>{{ page.introduction.text }}</p>
+      </div>
+
+      <div>
+        <img src="{{ page.introduction.image | image }}">
+      </div>
+    </div>
+  </div>
+
+
 
   {% include "partials/trapdoor.html" %}
 
