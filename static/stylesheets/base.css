@@ -113,12 +113,42 @@ body {
 /* Basic */
 ul,
 ol {
+
+}
+
+.post-job-contact {
   list-style: none;
+  max-width: 20rem;
+  margin: 2rem;
+  font-size: 25px;
+  border-width: 2px;
+
+}
+
+.post-job-contact-gr {
+  list-style: none;
+  max-width: 20rem;
+  margin: 2rem;
+  font-size: 25px;
+  border-width: 2px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #DEFAEF;
+
 }
 
 a {
   text-decoration: none;
   color: #442ab9;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+
+}
+
+.non-strike-color {
+  color: red;
 }
 
 img {
@@ -201,6 +231,12 @@ small {
   text-align: center;
   margin: 0 auto;
   padding: 4rem 0;
+}
+
+.contact-container {
+  margin: 5rem;
+  border-top: 1px solid #442ab9;
+  border-bottom: 1px solid #442ab9;
 }
 
 /* Buttons */

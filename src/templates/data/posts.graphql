@@ -6,6 +6,7 @@ query {
       _enabledAt
       title
       deck
+      linkUrl
       tags {
         name
       }
@@ -15,7 +16,7 @@ query {
           path
         }
       }
-      featureImage {
+      featuredImage {
         path
       }
       bodyHtml

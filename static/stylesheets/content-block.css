@@ -1,6 +1,8 @@
 /* Content Block */
 .content-block {
   margin: 8rem 0;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
 }
 
 .content-block .container {

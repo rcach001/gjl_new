@@ -13,7 +13,7 @@
           <li>
             <a href="{{ post | route('post') }}" class="tout">
               <div>
-                <img src="{{ post.featureImage | image }}">
+                <img src="{{ post.featuredImage | image }}">
               </div>
 
               <div class="tout__content">
@@ -28,6 +28,9 @@
         {% endfor %}
       </ul>
     </div>
+  </div>
+  <div class="container">
+    <a href="/" class="button button-fontcolor">Post a Job for $99 </a>
   </div>
 
   {% include "partials/pagination.html" %}
