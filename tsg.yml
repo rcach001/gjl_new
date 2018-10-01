@@ -27,12 +27,12 @@ routes:
     context: data/contact.graphql
 
   post:
-    path: /blog/:title/
+    path: /jobs/:title/
     template: pages/posts/individual.html
     paginate:
       pageSize: 4
-      path: /blog/page-:num/
-      firstPage: /blog/
+      path: /jobs/page-:num/
+      firstPage: /jobs/
       template: pages/posts/landing.html
       data: data/posts.graphql
       itemName: post

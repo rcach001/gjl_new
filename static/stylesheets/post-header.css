@@ -6,6 +6,7 @@
 .post-header__content {
   position: relative;
   padding-bottom: 2.4rem;
+  
 }
 
 .post-header__content::after {

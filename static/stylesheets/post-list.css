@@ -1,8 +1,9 @@
 /* Post List */
 .post-list {
   margin: 8rem 0;
+  padding-left: 5rem;
 }
 
 .post-list li + li {
-  margin-top: 6rem;
+  margin-top: 1rem;
 }

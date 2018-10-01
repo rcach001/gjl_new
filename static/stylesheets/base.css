@@ -149,7 +149,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 2.1rem;
 }
 
 h4 {
@@ -235,4 +235,5 @@ small {
 /* Header */
 .header {
   margin-top: 6.4rem;
+  padding-left: 4rem;
 }
