@@ -16,19 +16,19 @@
       <hr>
 
       <ul>
-        {% for post in page.featuredPosts %}
+        {% for fpost in page.featuredPosts %}
           <li>
-            <a href="{{ post | route('post') }}" class="tout">
+            <a href="{{ fpost | route('post') }}" class="tout">
               <div>
-                <img src="{{ post.featuredImage | image }}">
+                <img src="{{ fpost.featuredImage | image }}">
               </div>
 
               <div class="tout__content color">
-                <h5>{{ post.title }}</h5>
+                <h5>{{ fpost.title }}</h5>
                 <p> <!--{{ now | date('YYYY') }} -->
-                  <time>{{ post._enabledAt | date("YYYY") }}</time>
+                  <time>{{ fpost._enabledAt | date("YYYY") }}</time>
                 </p>
-                <p>{{ post.deck }}</p>
+                <p>{{ fpost.deck }}</p>
               </div>
             </a>
           </li>
@@ -40,7 +40,7 @@
       <hr>
 
       <ul>
-        {% for post in page.featuredPosts %}
+        {% for post in page.Posts %}
           <li>
             <a href="{{ post | route('post') }}" class="tout">
               <div>
@@ -82,20 +82,7 @@
       </ul>
     </div>
   </div>
-
-
-  <div class="content-block">
-    <div class="container">
-      <div>
-        <h2>{{ page.introduction.heading }}</h2>
-        <p>{{ page.introduction.text }}</p>
-      </div>
-
-      <div>
-        <img src="{{ page.introduction.image | image }}">
-      </div>
-    </div>
-  </div>
+  <br />
 
 
 

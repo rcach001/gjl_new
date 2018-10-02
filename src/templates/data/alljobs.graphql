@@ -1,35 +1,24 @@
 query {
-  page: getHomepage {
-    title
-    hero {
-      image {
-        path
+  page: getAlljobs {
+    relationship {
+      ... on FeaturedPost { 
+        title
+        deck
+        
+        
+        
+        body
+        linkUrl
       }
-      heading
-      text
-      button {
-        text
-        url
-      }
-    }
-    introduction {
-      image {
-        path
-      }
-      heading
-      text
-    }
-    statBar {
-      value
-      label
-    }
-    featuredPosts {
-      title
-      featuredImage {
-        path
-      }
-      author {
-        name
+      ... on Post {
+        title
+        deck
+        
+        
+        
+        body
+        linkUrl
+
       }
     }
   }

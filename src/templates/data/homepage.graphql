@@ -17,7 +17,7 @@ query {
         path
       }
       heading
-      text
+      paragraphHtml
     }
     statBar {
       value

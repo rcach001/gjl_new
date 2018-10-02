@@ -1,15 +1,15 @@
 /* Content Block */
 .content-block {
-  margin: 8rem 0;
+  margin: 2rem 0;
   padding-bottom: 2rem;
   padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .content-block .container {
   display: flex;
   align-items: center;
 }
-
 
 .content-block .container > * {
   flex: 1 0 50%;
