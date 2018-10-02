@@ -7,6 +7,14 @@
 
 }
 
+.hero__alljobs {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  height: 20rem;
+
+}
+
 .hero--text {
   color: #442ab9;
 }
@@ -32,6 +40,13 @@
 }
 
 .hero__content {
+  max-width: 75rem;
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+
+}
+
+.hero__content__alljobs {
   max-width: 75rem;
   padding-top: 3rem;
   padding-bottom: 3.5rem;

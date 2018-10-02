@@ -1,0 +1,23 @@
+{% extends "layouts/default.html" %}
+
+{% block content %} <!-- FEATURED LISTINGS / FPOST -->
+  <header class="post-header">
+    <div class="container">
+      <div class="post-header__content">
+        <h2>{{ fpost.title }}</h2>
+        <p><a href="{{ fpost.author | route('author') }}">At {{ fpost.author.name }}</a></p>
+        <p><span>{{ fpost._enabledAt | date("MMMM D, YYYY") }}</span></p>
+        {% if fpost.tags |  length %}<p>
+          Tags: {% for tag in fpost.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <a href="{{ fpost.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+      {{ fpost.bodyHtml | safe }}
+      <a href="{{ fpost.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+    </div>
+  </div>
+{% endblock %}

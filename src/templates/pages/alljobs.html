@@ -1,13 +1,11 @@
 {% extends "layouts/default.html" %}
 
 {% block content %}
-  <div class="hero hero--text" style="background-image: url('{{ page.hero.image | image }}');">
+  <div class="hero__alljobs hero--text">
     <div class="container">
-      <div class="hero__content">
-        <h1>{{ page.hero.heading }}</h1>
-        <p>{{ page.hero.text }}</p>
-
-        <a href="/alljobs" class="button button-fontcolor">{{ page.hero.button.text }}</a>
+      <div class="hero__content__alljobs">
+        <h1>We're here for you...we're arocket.</h1>
+        <p>Something here</p>
       </div>
     </div>
   </div>
@@ -37,27 +35,7 @@
         {% endfor %}
       </ul>
 
-      <div>
-        <a href="/jobs" class="button button-fontcolor">View all</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="stat-bar">
-    <div class="container">
-      <ul>
-        {% for stat in page.statBar %}
-          <li>
-            <h1>{{ stat.value }}</h1>
-            <p>{{ stat.label }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <div class="thumb-list thumb-list--three">
-    <div class="container">
+      <br>
       <h2 class="heading">More Jobs</h2> <!-- need to really make this its own list of posts -->
       <hr>
 
@@ -85,9 +63,25 @@
       <div>
         <a href="/jobs" class="button button-fontcolor">View all</a>
       </div>
+    
+
     </div>
   </div>
 
+  <!-- end of jobs -->
+
+  <div class="stat-bar-alljobs">
+    <div class="container">
+      <ul>
+        {% for stat in page.statBar %}
+          <li>
+            <h1>{{ stat.value }}</h1>
+            <p>{{ stat.label }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
 
   <div class="content-block">

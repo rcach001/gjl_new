@@ -1,0 +1,25 @@
+query {
+  getFeaturedPostList(sort: [{field: "_enabledAt", order: "desc"}]) {
+    total
+    items {
+      _contentTypeName
+      _enabledAt
+      title
+      deck
+      linkUrl
+      tags {
+        name
+      }
+      author {
+        name
+        image {
+          path
+        }
+      }
+      featuredImage {
+        path
+      }
+      bodyHtml
+    }
+  }
+}

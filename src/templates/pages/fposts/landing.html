@@ -1,0 +1,38 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+  <header class="post-header">
+    <div class="container"> <!-- add post-header__content for double hr line -->
+    <h1>Featured Jobs</h1>
+    </div>
+  </header>
+  <div class="post-list">
+    <div class="container">
+      <ul>
+        {% for fpost in items %}
+          <li>
+            <a href="{{ fpost | route('fpost') }}" class="tout">
+              <div>
+                <img src="{{ fpost.featuredImage | image }}">
+              </div>
+
+              <div class="tout__content">
+                <h3>{{ fpost.title }}</h3>
+                <p>
+                  <time>{{ fpost._enabledAt | date("MMMM D, YYYY") }}</time>
+                </p>
+
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <a href="/" class="button button-fontcolor">Post a Job for $99 </a>
+  </div>
+
+  {% include "partials/pagination.html" %}
+
+{% endblock %}

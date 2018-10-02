@@ -16,6 +16,11 @@ routes:
     template: pages/homepage.html
     context: data/homepage.graphql
 
+  alljobs:
+    path: /alljobs
+    template: pages/alljobs.html
+    context: data/alljobs.graphql
+
   about:
     path: /about
     template: pages/about.html
@@ -36,3 +41,24 @@ routes:
       template: pages/posts/landing.html
       data: data/posts.graphql
       itemName: post
+
+  payment:
+    path: /payment
+    template: pages/payment.html
+    context: data/payment.graphql
+
+  paymentv:
+    path: /paymentv
+    template: pages/paymentv.html
+    context: data/paymentv.graphql
+
+  featuredpost:
+    path: /fjobs/:title/
+    template: pages/fposts/individual.html
+    paginate:
+      pageSize: 25
+      path: /fjobs/page-:num/
+      firstPage: /fjobs/
+      template: pages/fposts/landing.html
+      data: data/fposts.graphql
+      itemName: fpost
