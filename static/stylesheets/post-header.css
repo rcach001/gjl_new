@@ -21,6 +21,12 @@
   border-bottom: 1px solid #442ab9;
 }
 
+.post-header__content_step {
+  width: 100%;
+  border-top: 1px solid #442ab9;
+
+}
+
 
 .post-header__content h2 {
   max-width: 56rem;
