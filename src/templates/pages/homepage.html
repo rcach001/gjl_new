@@ -13,14 +13,14 @@
   </div>
 
   <div class="thumb-list thumb-list--three">
-    <div class="container">
+    <div class="container tout-featured">
       <h2 id="featured-jobs" class="heading">Featured Jobs</h2>
-      <hr>
+      <hr class="tout-hr">
 
       <ul>
         {% for fpost in page.featuredPosts %}
           <li>
-            <a href="{{ fpost | route('fpost') }}" class="tout">
+            <a href="{{ fpost | route('fpost') }}" class="tout">           
               <div>
                 <img src="{{ fpost.featuredImage | image }}">
               </div>
@@ -32,29 +32,20 @@
                 </p>
                 <p>{{ fpost.deck }}</p>
               </div>
+
             </a>
           </li>
+
+
         {% endfor %}
       </ul>
 
-      <div>
+     <!-- <div>
         <a href="/jobs" class="button button-fontcolor">View all</a>
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <div class="stat-bar">
-    <div class="container">
-      <ul>
-        {% for stat in page.statBar %}
-          <li>
-            <h1>{{ stat.value }}</h1>
-            <p>{{ stat.label }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
 
   <div class="thumb-list thumb-list--three">
     <div class="container">
@@ -62,7 +53,7 @@
       <hr>
 
       <ul>
-        {% for post in page.featuredPosts %}
+        {% for post in page.posts %}
           <li>
             <a href="{{ post | route('post') }}" class="tout">
               <div>
@@ -88,6 +79,18 @@
     </div>
   </div>
 
+  <div class="stat-bar">
+    <div class="container">
+      <ul>
+        {% for stat in page.statBar %}
+          <li>
+            <h1>{{ stat.value }}</h1>
+            <p>{{ stat.label }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
 
   
@@ -95,7 +98,7 @@
       
       <div class="container-growth-hp">
         <h2 class="heading">{{ page.introduction.heading }}</h2>
-        <hr>
+        <hr class="tout-hr">
       </div>
     </div>
 

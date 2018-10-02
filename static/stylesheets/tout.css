@@ -2,10 +2,14 @@
 .tout {
   display: flex;
 }
+
+.tout-featured {
+  background-color: #ffff9575;
+  padding-top: 1rem;
+}
 .color:hover {  
   color: #000;
 }
-
 
 .tout > :first-child {
   flex: 0 0 10%;

@@ -1,6 +1,6 @@
 query {
   page: getHomepage {
-    title
+    
     hero {
       image {
         path
@@ -24,6 +24,16 @@ query {
       label
     }
     featuredPosts {
+      title
+      featuredImage {
+        path
+      }
+      author {
+        name
+      }
+
+    }
+    posts {
       title
       featuredImage {
         path

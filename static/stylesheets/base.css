@@ -232,10 +232,12 @@ small {
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10;
+
 }
 
 .container-growth-hp {
   max-width: 92rem;
+  padding-top: 2rem;
 }
 
 .image-container {
@@ -323,4 +325,13 @@ small {
 .header {
   margin-top: 6.4rem;
   padding-left: 4rem;
+}
+
+
+hr {
+
+  }
+
+.tout-hr {
+  color: #f8f8f8;
 }
