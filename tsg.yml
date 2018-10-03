@@ -62,3 +62,17 @@ routes:
       template: pages/fposts/landing.html
       data: data/fposts.graphql
       itemName: fpost
+
+  locations:
+    path: /locations/:location/
+    template: pages/locations/individual.html
+    context: data/locations.graphql
+      pageSize: 50
+      path: /locations/page-:num/
+      firstPage: /locations/
+      template: pages/locations/landing.html
+      data: data/locations.graphql
+      itemName: location
+
+
+

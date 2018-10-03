@@ -20,7 +20,7 @@
       <ul>
         {% for fpost in page.featuredPosts %}
           <li>
-            <a href="{{ fpost | route('fpost') }}" class="tout">           
+            <a href="{{ fpost | route('linkUrl') }}" class="tout">           
               <div>
                 <img src="{{ fpost.featuredImage | image }}">
               </div>

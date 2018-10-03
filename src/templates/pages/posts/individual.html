@@ -5,8 +5,11 @@
     <div class="container">
       <div class="post-header__content">
         <h2>{{ post.title }}</h2>
-        <p><a href="{{ post.author | route('author') }}">At {{ post.author.name }}</a></p>
+        <p><a href="{{ post.author.name | route('author') }}">At {{ post.author.name }}</a></p>
+        
         <p><span>{{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
+        
+        <p>Location: {{ post.author.location }}</p>
         {% if post.tags |  length %}<p>
           Tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
       </div>

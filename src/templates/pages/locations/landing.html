@@ -1,0 +1,35 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+  <header class="post-header">
+    <div class="container"> <!-- add post-header__content for double hr line -->
+    <h1>All Locations</h1>
+    </div>
+  </header>
+  <div class="post-list">
+    <div class="container">
+      <ul>
+        {% for location in items %}
+          <li>
+            <a href="{{ location | route('locations') }}" class="tout">
+
+              <div class="tout__content color">
+                <h3>{{ location.author.name }}</h3>
+                <p>
+                  <time>{{ location._enabledAt | date("MMMM D, YYYY") }}</time>
+                </p>
+
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <a href="/" class="button button-fontcolor">Post a Job for $99 </a>
+  </div>
+
+  {% include "partials/pagination.html" %}
+
+{% endblock %}

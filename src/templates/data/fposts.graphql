@@ -6,6 +6,9 @@ query {
       _enabledAt
       title
       deck
+      location {
+        location
+      }
       linkUrl
       tags {
         name

@@ -1,0 +1,8 @@
+query {
+  page: getLocationsList  {  
+   	total
+   	items {
+   		location
+   	}
+  }
+}
