@@ -18,31 +18,27 @@
       <hr class="tout-hr">
 
       <ul>
-        {% for fpost in page.featuredPosts %}
+        {% for fpost in page.featuredPost %}
           <li>
-            <a href="{{ fpost | route('fposts') }}" class="tout">           
+            <a href="{{ fpost | route('featuredpost') }}" class="tout">
               <div>
                 <img src="{{ fpost.featuredImage | image }}">
               </div>
 
               <div class="tout__content color">
                 <h5>{{ fpost.title }}</h5>
-                <p> <!--{{ now | date('YYYY') }} -->
-                  <time>{{ fpost._enabledAt | date("YYYY") }}</time>
+                <p>
+                  posted <time>{{ fpost._enabledAt | date("D") }}</time>
+                  days ago
                 </p>
-                <p>{{ fpost.deck }}</p>
+                
               </div>
 
             </a>
           </li>
 
-
         {% endfor %}
       </ul>
-
-     <!-- <div>
-        <a href="/jobs" class="button button-fontcolor">View all</a>
-      </div> -->
     </div>
   </div>
 
@@ -66,7 +62,7 @@
                   posted <time>{{ post._enabledAt | date("D") }}</time>
                   days ago
                 </p>
-                <p>{{ post.deck }}</p>
+               
               </div>
             </a>
           </li>

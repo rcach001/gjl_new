@@ -23,7 +23,7 @@ query {
       value
       label
     }
-    featuredPosts {
+    featuredPost {
       title
       featuredImage {
         path

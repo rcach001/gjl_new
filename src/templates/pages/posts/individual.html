@@ -5,7 +5,7 @@
     <div class="container">
       <div class="post-header__content">
         <h2>{{ post.title }}</h2>
-        <p><a href="{{ post.author.name | route('author') }}">At {{ post.author.name }}</a></p>
+        <p><a href="{{ post.author.name | route('name') }}">At {{ post.author.name }}</a></p>
         
         <p><span>{{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
         
