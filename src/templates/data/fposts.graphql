@@ -18,6 +18,9 @@ query {
         image {
           path
         }
+        locationaut {
+          location
+        }
       }
       featuredImage {
         path
