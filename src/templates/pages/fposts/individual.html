@@ -4,9 +4,15 @@
   <header class="post-header">
     <div class="container">
       <div class="post-header__content">
+        
         <h2>{{ fpost.title }}</h2>
+        
         <p><a href="{{ fpost.author | route('author') }}">At {{ fpost.author.name }}</a></p>
+        
         <p><span>{{ fpost._enabledAt | date("MMMM D, YYYY") }}</span></p>
+
+        <p>Location: {{ fpost.location.location }}</p>
+
         {% if fpost.tags |  length %}<p>
           Tags: {% for tag in fpost.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
       </div>

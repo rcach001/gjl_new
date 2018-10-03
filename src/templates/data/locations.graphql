@@ -3,6 +3,15 @@ query {
    	total
    	items {
    		location
+   		author {
+   		  name
+   		  image {
+   			path
+   		  }
+   		  locationaut {
+   		  	location
+   		  }
+   		}
    	}
   }
 }
