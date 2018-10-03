@@ -9,7 +9,7 @@
         
         <p><span>{{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
         
-        <p>Location: {{ post.author.location }}</p>
+        <p>Location: {{ post.locationaut }}</p>
         {% if post.tags |  length %}<p>
           Tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
       </div>
