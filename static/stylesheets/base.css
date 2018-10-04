@@ -1,4 +1,11 @@
 /* Reset */
+/* Template colors:
+-Hero green: #DEFAEF
+-Purple bg: #442AB9
+*/
+
+
+
 html,
 body,
 div,
@@ -235,6 +242,17 @@ small {
 
 }
 
+.footer-container {
+ 
+  max-width: 92rem;
+  margin: 0 auto;
+  position: relative;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  z-index: 10;
+}
+
+
 .container-growth-hp {
   max-width: 92rem;
   padding-top: 2rem;
@@ -297,6 +315,13 @@ small {
   background-color: #18C954 ;
 }
 
+.button-better-green {
+    color: #ffffff;
+    background-color: #5edeb3;
+    padding: 1.8rem 2.8rem 2rem;
+    line-height: 1.2;
+  }
+
 .button-bgcolor-red {
   color: #fff;
   background-color: #442ab9; 
@@ -335,3 +360,4 @@ hr {
 .tout-hr {
   color: #f8f8f8;
 }
+

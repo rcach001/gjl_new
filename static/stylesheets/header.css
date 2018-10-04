@@ -4,13 +4,13 @@
   height: 11rem;
   background-color: #fff;
   border-top: 0.4rem solid #DEFAEF;
-  padding-top: 3.5rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
   .navbar-nav {
     width: 100%;
     text-align: left;
-    padding-left: 1%;
+    padding-left: .5%;
   }
   .navbar-nav > li {
     float: none;
