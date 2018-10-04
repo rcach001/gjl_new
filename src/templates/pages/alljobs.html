@@ -1,0 +1,91 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+  <div class="hero__alljobs hero--text">
+    <div class="container">
+      <div class="hero__content__alljobs">
+        <h1>We're here for you...we're arocket.</h1>
+        <p>Something here</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="thumb-list thumb-list--three">
+    <div class="container">
+      <h2 id="featured-jobs" class="heading">Featured Jobs</h2>
+      <hr>
+
+      <ul>
+        {% for fpost in page.featuredPosts %}
+          <li>
+            <a href="{{ fpost | route('post') }}" class="tout">
+              <div>
+                <img src="{{ fpost.featuredImage | image }}">
+              </div>
+
+              <div class="tout__content color">
+                <h5>{{ fpost.title }}</h5>
+                <p> <!--{{ now | date('YYYY') }} -->
+                  <time>{{ fpost._enabledAt | date("YYYY") }}</time>
+                </p>
+                <p>{{ fpost.deck }}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <br>
+      <h2 class="heading">More Jobs</h2> <!-- need to really make this its own list of posts -->
+      <hr>
+
+      <ul>
+        {% for post in page.Posts %}
+          <li>
+            <a href="{{ post | route('post') }}" class="tout">
+              <div>
+                <img src="{{ post.featuredImage | image }}">
+              </div>
+
+              <div class="tout__content color">
+                <h5>{{ post.title }}</h5>
+                <p>
+                  posted <time>{{ post._enabledAt | date("D") }}</time>
+                  days ago
+                </p>
+                <p>{{ post.deck }}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div>
+        <a href="/jobs" class="button button-fontcolor">View all</a>
+      </div>
+    
+
+    </div>
+  </div>
+
+  <!-- end of jobs -->
+
+  <div class="stat-bar-alljobs">
+    <div class="container">
+      <ul>
+        {% for stat in page.statBar %}
+          <li>
+            <h1>{{ stat.value }}</h1>
+            <p>{{ stat.label }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <br />
+
+
+
+  {% include "partials/trapdoor.html" %}
+
+{% endblock %}

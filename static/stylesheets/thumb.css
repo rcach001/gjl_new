@@ -1,12 +1,12 @@
 /* Thumb lists */
 .thumb-list {
-  margin: 8rem 0;
+  margin: 3rem 0;
 }
 
 .thumb-list--dark {
   background-color: #e4f8ee;
   padding: 6.4rem 0;
-  margin: 0
+  margin: 0;
 }
 
 .thumb-list ul {

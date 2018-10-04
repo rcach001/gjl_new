@@ -6,31 +6,79 @@
       <div class="hero__content">
         <h1>{{ page.hero.heading }}</h1>
         <p>{{ page.hero.text }}</p>
-
-        <a href="#featured-jobs" class="button button-fontcolor">{{ page.hero.button.text }}</a>
+        
       </div>
     </div>
   </div>
 
+<div class="container container-mc-aligned">
+
+  <div id="mc_embed_signup">
+    <form action="https://ramoncacho.us16.list-manage.com/subscribe/post?u=2d404b758c066c83daaaefa3d&amp;id=6e02e524ff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL"> Get Growth jobs right in your inbox! </label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR@EMAIL.COM" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2d404b758c066c83daaaefa3d_6e02e524ff" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+
+    </form>
+  </div>
+  <p class="container-mc-aligned"><i>Once a week. Unsubscribe any time.</i></p>
+</div>
+
+  <div class="thumb-list thumb-list--three">
+    <div class="container tout-featured">
+      <h2 id="featured-jobs" class="heading">Featured Jobs</h2>
+      <hr class="tout-hr">
+
+      <ul>
+        {% for fpost in page.featuredPost %}
+          <li>
+            <a href="{{ fpost | route('featuredpost') }}" class="tout">
+              <div>
+                <img src="{{ fpost.featuredImage | image }}">
+              </div>
+
+              <div class="tout__content color">
+                <h5>{{ fpost.title }}</h5>
+                <p>
+                  posted <time>{{ fpost._enabledAt | date("D") }}</time>
+                  days ago
+                </p>
+                
+              </div>
+
+            </a>
+          </li>
+
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+
   <div class="thumb-list thumb-list--three">
     <div class="container">
-      <h2 id="featured-jobs" class="heading">Featured Jobs</h2>
+      <h2 class="heading">More Jobs</h2> <!-- need to really make this its own list of posts -->
       <hr>
 
       <ul>
-        {% for post in page.featuredPosts %}
+        {% for post in page.posts %}
           <li>
             <a href="{{ post | route('post') }}" class="tout">
               <div>
-                <img src="{{ post.featureImage | image }}">
+                <img src="{{ post.featuredImage | image }}">
               </div>
 
               <div class="tout__content color">
                 <h5>{{ post.title }}</h5>
                 <p>
-                  <time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time>
+                  posted <time>{{ post._enabledAt | date("D") }}</time>
+                  days ago
                 </p>
-                <p>{{ post.deck }}</p>
+               
               </div>
             </a>
           </li>
@@ -38,7 +86,7 @@
       </ul>
 
       <div>
-        <a href="/jobs" class="button button-fontcolor">View all</a>
+        <a href="/jobs" class="button button-fontcolor">View more jobs</a>
       </div>
     </div>
   </div>
@@ -56,55 +104,51 @@
     </div>
   </div>
 
-  <div class="thumb-list thumb-list--three">
     <div class="container">
-      <h2 class="heading">More Jobs</h2> <!-- need to really make this its own list of posts -->
-      <hr>
-
-      <ul>
-        {% for post in page.featuredPosts %}
-          <li>
-            <a href="{{ post | route('post') }}" class="tout">
-              <div>
-                <img src="{{ post.featureImage | image }}">
-              </div>
-
-              <div class="tout__content color">
-                <h5>{{ post.title }}</h5>
-                <p>
-                  posted <time>{{ post._enabledAt | date("D") }}</time>
-                  days ago
-                </p>
-                <p>{{ post.deck }}</p>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      <div>
-        <a href="/jobs" class="button button-fontcolor">View all</a>
+      
+      <div class="container-growth-hp">
+        <h2 class="heading">{{ page.introduction.heading }}</h2>
+        
+        <hr class="tout-hr">
+      
       </div>
     </div>
-  </div>
 
-
-
-  <div class="content-block">
+  <div class="content content-block">   
     <div class="container">
       <div>
-        <h2>{{ page.introduction.heading }}</h2>
-        <p>{{ page.introduction.text }}</p>
-      </div>
-
+      <p>Like Paul Graham from Y Combinator wrote once in his famous blog post "Startup = Growth":</p>
       <div>
+        <aside class="pullquote">
+        <blockquote>A startup is a company designed to grow fast. Being newly founded does not in itself make a company a startup. Nor is it necessary for a startup to work on technology, or take venture funding, or have some sort of "exit." The only essential thing is growth.</blockquote></aside>
+        
+        <p>With Growth Jobs List, we're in the pursuit of matching growth & marketing people with startups and tech companies.</p>
+        <p><strong>Growth helps keep companies alive.</strong></p>
+      </div>
+    </div>
+
+      <!-- <div>
         <img src="{{ page.introduction.image | image }}">
-      </div>
+      </div> -->
     </div>
   </div>
 
+<div class="container container-mc-aligned">
 
+  <div id="mc_embed_signup">
+    <form action="https://ramoncacho.us16.list-manage.com/subscribe/post?u=2d404b758c066c83daaaefa3d&amp;id=6e02e524ff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL"> Get Growth jobs right in your inbox! </label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR@EMAIL.COM" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2d404b758c066c83daaaefa3d_6e02e524ff" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
 
-  {% include "partials/trapdoor.html" %}
+    </form>
+  </div>
+  <p class="container-mc-aligned"><i>Once a week. Unsubscribe any time.</i></p>
+</div>
+
 
 {% endblock %}

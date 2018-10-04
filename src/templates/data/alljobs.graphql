@@ -1,0 +1,25 @@
+query {
+  page: getAlljobs {
+    relationship {
+      ... on FeaturedPost { 
+        title
+        deck
+        
+        
+        
+        body
+        linkUrl
+      }
+      ... on Post {
+        title
+        deck
+        
+        
+        
+        body
+        linkUrl
+
+      }
+    }
+  }
+}

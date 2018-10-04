@@ -3,12 +3,22 @@
   position: relative;
   background-size: cover;
   background-position: center center;
-  height: 30rem;
+  height: 22rem;
+  margin-bottom: 3rem;
+
+}
+
+.hero__alljobs {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  height: 20rem;
 
 }
 
 .hero--text {
   color: #442ab9;
+  text-shadow: 1px 1px #fff;
 }
 
 .hero--text::after {
@@ -19,7 +29,7 @@
   width: 100%;
   height: 100%;
   background-color: #DEFAEF;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .hero .container {
@@ -28,6 +38,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
+  padding-top: 1rem; 
 
 }
 
@@ -38,9 +49,17 @@
 
 }
 
+.hero__content__alljobs {
+  max-width: 75rem;
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+
+}
+
 .hero h1 {
   margin-bottom: 2.4rem;
   font-size: 36px;
+  text-shadow: 1px 1px #fff;
 }
 
 .hero .button {

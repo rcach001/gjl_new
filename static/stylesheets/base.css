@@ -1,4 +1,11 @@
 /* Reset */
+/* Template colors:
+-Hero green: #DEFAEF
+-Purple bg: #442AB9
+*/
+
+
+
 html,
 body,
 div,
@@ -111,9 +118,32 @@ body {
 }
 
 /* Basic */
-ul,
-ol {
+ul {
   list-style: none;
+}
+ol {
+
+}
+
+.post-job-contact {
+  list-style: none;
+  max-width: 20rem;
+  margin: 2rem;
+  font-size: 20px;
+  border-width: 2px;
+
+}
+
+.post-job-contact-gr {
+  list-style: none;
+  max-width: 20rem;
+  margin: 2rem;
+  font-size: 20px;
+  border-width: 2px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #DEFAEF;
+
 }
 
 a {
@@ -121,9 +151,36 @@ a {
   color: #442ab9;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+  color: #fff;
+
+}
+
+.non-strike-color {
+  color: red;
+}
+
+.white-override-color {
+  color: #fff;
+}
+
+.size-override-formpage {
+  font-size: 25px;
+}
+
 img {
   max-width: 100%;
 }
+
+/*@media screen and (max-width: 768px) {
+
+.img-homepage {
+  float: right;
+  display: none;
+  }
+
+} */
 
 /* Containers */
 .main {
@@ -144,7 +201,7 @@ h1 {
 h2 {
   font-size: 2.75rem;
 }
-.content-block-a{
+.content-block-a {
   color: #DEFAEF;
 }
 
@@ -182,6 +239,23 @@ small {
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10;
+
+}
+
+.footer-container {
+ 
+  max-width: 92rem;
+  margin: 0 auto;
+  position: relative;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  z-index: 10;
+}
+
+
+.container-growth-hp {
+  max-width: 92rem;
+  padding-top: 2rem;
 }
 
 .image-container {
@@ -203,13 +277,19 @@ small {
   padding: 4rem 0;
 }
 
+.contact-container {
+  margin: 5rem;
+  border-top: 1px solid #442ab9;
+  border-bottom: 1px solid #442ab9;
+}
+
 /* Buttons */
 .button {
   background-color: #442ab9;
   padding: 2rem 3rem;
   display: inline-block;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase; 
 }
@@ -220,11 +300,45 @@ small {
 
 }
 
+.button-bgcolor-gr {
+  color: #fff;
+  background-color: #442ab9; 
+  padding: 2rem 3rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+.color-hover:hover {
+  background-color: #18C954 ;
+}
+
+.button-better-green {
+    color: #ffffff;
+    background-color: #5edeb3;
+    padding: 1.8rem 2.8rem 2rem;
+    line-height: 1.2;
+  }
+
+.button-bgcolor-red {
+  color: #fff;
+  background-color: #442ab9; 
+  padding: 2rem 3rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
 .button-nav {
   align-items: center;
   color: #fff;
   font-size: 1.4rem;
   padding: 1rem 2rem;
+
 
 }
 
@@ -237,3 +351,13 @@ small {
   margin-top: 6.4rem;
   padding-left: 4rem;
 }
+
+
+hr {
+
+  }
+
+.tout-hr {
+  color: #f8f8f8;
+}
+

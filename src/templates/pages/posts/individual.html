@@ -1,13 +1,17 @@
 {% extends "layouts/default.html" %}
 
-{% block content %}
+{% block content %} <!-- REGULAR LISTINGS / POST -->
   <header class="post-header">
     <div class="container">
       <div class="post-header__content">
         <h2>{{ post.title }}</h2>
-        <p><a href="{{ post.author | route('author') }}">By {{ post.author.name }}</a></p>
+        <p><a href="{{ post.author.name | route('name') }}">At {{ post.author.name }}</a></p>
+        
         <p><span>{{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
-        {% if post.tags | length %}<p>
+        
+        <p>Location: {{ post.locationaut }}</p>
+        
+        {% if post.tags |  length %}<p>
           Tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
       </div>
     </div>
@@ -15,7 +19,9 @@
 
   <div class="content">
     <div class="container">
+      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply to job</a>
       {{ post.bodyHtml | safe }}
+      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply to job</a>
     </div>
   </div>
 {% endblock %}

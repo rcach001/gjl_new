@@ -1,0 +1,24 @@
+{% extends "layouts/default.html" %}
+
+{% block content %} <!-- REGULAR LISTINGS / POST -->
+  <header class="post-header">
+    <div class="container">
+      <div class="post-header__content">
+        <h2>{{ location.title }}</h2>
+        <p><a href="{{ location.author | route('author') }}">At {{ location.author.name }}</a></p>
+        <p><span>{{ location._enabledAt | date("MMMM D, YYYY") }}</span></p>
+        <p>Location: {{ location.location }}</p>
+        {% if location.tags |  length %}<p>
+          Tags: {% for tag in location.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <a href="{{ location.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+      {{ location.bodyHtml | safe }}
+      <a href="{{ location.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+    </div>
+  </div>
+{% endblock %}

@@ -12,3 +12,20 @@
   flex: 1 1 25%;
   text-align: center;
 }
+
+
+.stat-bar-alljobs {
+  padding: 2rem 0;
+  background-color: #e4f8ee;
+
+
+}
+
+.stat-bar-alljobs ul {
+  display: flex;
+}
+
+.stat-bar-alljobs li {
+  flex: 1 1 25%;
+  text-align: center;
+}
