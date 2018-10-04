@@ -7,7 +7,7 @@ query {
       title
       deck
       location {
-        location
+        name
       }
       linkUrl
       tags {
@@ -19,7 +19,7 @@ query {
           path
         }
         locationaut {
-          location
+          name
         }
       }
       featuredImage {

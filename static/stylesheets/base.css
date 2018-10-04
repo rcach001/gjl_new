@@ -246,9 +246,10 @@ small {
 }
 
 .content-p-size {
-  font-size: 1.4rem;
-  margin-top: 9px;
-  opacity: .6;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: black;
+
 }
 
 /*@media only screen and (max-width: 500px) {

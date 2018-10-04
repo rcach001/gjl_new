@@ -64,7 +64,7 @@ routes:
       itemName: fpost
 
   locations:
-    path: /locations/:location/
+    path: /locations/:name/
     template: pages/locations/individual.html
     paginate:
       pageSize: 50

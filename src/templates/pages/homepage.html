@@ -44,8 +44,8 @@
               <div class="tout__content color">
                 <h5>{{ fpost.title }}</h5>
                 <p>
-                  posted <time>{{ fpost._enabledAt | date("D") }}</time>
-                  days ago
+                   <time>{{ fpost._enabledAt | date("MMMM D, YYYY" )}}</time>
+                  
                 </p>
                 
               </div>
@@ -75,8 +75,8 @@
               <div class="tout__content color">
                 <h5>{{ post.title }}</h5>
                 <p>
-                  posted <time>{{ post._enabledAt | date("D") }}</time>
-                  days ago
+                  <time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time>
+                  
                 </p>
                
               </div>

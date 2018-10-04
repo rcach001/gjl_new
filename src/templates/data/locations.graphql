@@ -2,16 +2,8 @@ query {
   page: getLocationsList  {  
    	total
    	items {
-   		location
-   		author {
-   		  name
-   		  image {
-   			path
-   		  }
-   		  locationaut {
-   		  	location
-   		  }
-   		}
+   		name
+   		
    	}
   }
 }
