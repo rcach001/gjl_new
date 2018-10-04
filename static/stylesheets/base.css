@@ -227,7 +227,6 @@ p {
   color: #DEFAEF;
 }
 
-
 small {
   font-size: 1.4rem;
 }
@@ -241,6 +240,23 @@ small {
   z-index: 10;
 
 }
+
+.container-p {
+  align-content: center;
+}
+
+.content-p-size {
+  font-size: 1.4rem;
+  margin-top: 9px;
+  opacity: .6;
+}
+
+/*@media only screen and (max-width: 500px) {
+  .container-mc-aligned {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  }
+}*/
 
 .footer-container {
  
