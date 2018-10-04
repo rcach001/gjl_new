@@ -1,6 +1,6 @@
 /* Form */
 form {
-  max-width: 56rem;
+  max-width: 100rem;
 }
 
 form > * + * {
