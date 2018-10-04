@@ -9,9 +9,9 @@
         
         <p><a href="{{ post.author.name | route('name') }}">At {{ post.author.name }}</a></p>
         
-        <p><span>{{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
+        <p><span><strog>Added:</strog> {{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
         
-        <p>Location: {{ post.locationaut }}</p>
+        <p><strong>Location:</strong> {{ post.locationaut }}</p>
         
         {% if post.tags |  length %}<p>
           Tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
@@ -21,9 +21,30 @@
 
   <div class="content">
     <div class="container">
-      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply Now</a>
       {{ post.bodyHtml | safe }}
-      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply to job</a>
+      <a href="{{ post.linkUrl }}" class="button button-fontcolor">Apply Now</a>
     </div>
   </div>
+  <br />
+  <div class="container">
+  <hr>
+  <br />
+  <br />    
+        <div id="mc_embed_signup">
+          <form action="https://ramoncacho.us16.list-manage.com/subscribe/post?u=2d404b758c066c83daaaefa3d&amp;id=6e02e524ff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL"> Get Growth jobs right in your inbox! </label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR@EMAIL.COM" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2d404b758c066c83daaaefa3d_6e02e524ff" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+      
+              <p class="content-p-size"><i>Sent once a week. Unsubscribe at any time.</i></p>
+          </form>
+          <br />
+          <br />
+        </div>
+      </div>
 {% endblock %}

@@ -314,7 +314,12 @@ small {
 .button-fontcolor {
   align-items: center;
   color: #fff;
+}
 
+.button-fontcolor:hover {
+  background-color:#DEFAEF;
+  color: #442AB9;
+  cursor:pointer;
 }
 
 .button-bgcolor-gr {
@@ -354,9 +359,14 @@ small {
   align-items: center;
   color: #fff;
   font-size: 1.4rem;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
 
+}
 
+.button-nav:hover {
+  background-color:#DEFAEF;
+  color: #442AB9;
+  cursor:pointer;
 }
 
 .button--dark {
