@@ -25,3 +25,14 @@
   width: 13rem;
 }
    
+
+  .twitter-follow-button {
+  margin-right: 2rem;
+  maring-top: 1rem
+}
+
+@media only screen and (max-width:560px ) {
+  .twitter-follow-button {
+  display: none;
+  }
+}
