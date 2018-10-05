@@ -1,30 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>http://www.takeshapesampleproject.com{{ homepage|route('homepage') }}</loc>
-        <lastmod>{{ homepage._updatedAt }}</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    {% for post in posts.items %}
-        <url>
-            <loc>http://www.takeshapesampleproject.com{{ post|route('posts') }}</loc>
-            <lastmod>{{ post._updatedAt }}</lastmod>
-        </url>
-    {% endfor %}
 
-    {% for book in books.items %}
-        <url>
-            <loc>http://www.takeshapesampleproject.com{{ book|route('books') }}</loc>
-            <lastmod>{{ book._updatedAt }}</lastmod>
-        </url>
-    {% endfor %}
+<url>
+  <loc>https://www.growthjobslist.com/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/contact/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/fjobs/head-of-corporate-marketing/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/fjobs/growth-marketer-referrals/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/fjobs/email-marketing-specialist/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/growth-customer-success-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/social-media-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/technical-marketing-manager-marketing-operations/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/digital-marketing-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/digital-marketing-assistant/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/growth-marketer/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/principal-rider-growth/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/affiliate-marketing-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/performance-marketing-lead/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/content-marketing-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/marketing-project-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/marketing-copywriter/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/marketing-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/audio-marketing-associate-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/marketing-analytics-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/display-marketing-manager/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/growth-marketing-manager-engagement/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/technical-growth-marketer-search/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/jobs/director-of-optimization/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/paymentv/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.growthjobslist.com/payment/</loc>
+  <lastmod>2018-10-05T17:13:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    {% for author in authors.items %}
-        <url>
-            <loc>http://www.takeshapesampleproject.com{{ author|route('authors') }}</loc>
-            <lastmod>{{ author._updatedAt }}</lastmod>
-        </url>
-    {% endfor %}
+
 </urlset>
