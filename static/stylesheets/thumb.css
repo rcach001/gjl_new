@@ -3,6 +3,10 @@
   margin: 2rem 0;
 }
 
+.thumb-list-featured {
+  margin: 2rem 0;
+}
+
 .thumb-list--dark {
   background-color: #e4f8ee;
   padding: 6.4rem 0;
@@ -18,8 +22,22 @@
   width: calc(100% + 3rem);
 }
 
+.thumb-list-featured ul {
+
+  flex-wrap: wrap;
+  position: relative;
+  left: -1.6rem;
+  margin-top: 3.4rem;
+  width: calc(100% + 3rem);
+}
+
 .thumb-list li {
   padding: 0 1.6rem;
+}
+
+.thumb-list-featured li {
+  padding: 0 1.6rem;
+  flex: 1 1 75%;
 }
 
 .thumb-list--two li {
@@ -31,11 +49,11 @@
 }
 
 .thumb-list--two li:nth-child(n+3) {
-  /*margin-top: 3.2rem;*/
+  margin-top: 3.2rem;
 }
 
 .thumb-list--three li:nth-child(n+20) {
-  /*margin-top: 3.2rem;*/
+  margin-top: 3.2rem;
 }
 
 .thumb-list img {

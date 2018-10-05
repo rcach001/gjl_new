@@ -146,6 +146,20 @@ ol {
 
 }
 
+li {
+}
+
+.list-select-packages {
+  font-size: 20px;
+  padding: 2rem 3rem;
+  color: black;
+}
+
+.list-select-packages-button-grid {
+  display: flex;
+  padding: 2rem 3rem;
+}
+
 a {
   text-decoration: none;
   color: #442ab9;
@@ -153,7 +167,7 @@ a {
 
 .strikethrough {
   text-decoration: line-through;
-  color: #fff;
+  color: #000;
 
 }
 
@@ -225,6 +239,11 @@ p {
 
 .content-block-c {
   color: #DEFAEF;
+}
+
+.content-packages {
+  color: black;
+  line-height: 3.75rem;
 }
 
 small {
@@ -352,7 +371,8 @@ small {
 
 .button-bgcolor-gr {
   color: #fff;
-  background-color: #442ab9; 
+  padding-top: 25px;
+  background-color: #442ab9;
   padding: 2rem 3rem;
   display: inline-block;
   position: relative;
@@ -362,26 +382,16 @@ small {
 }
 
 .color-hover:hover {
-  background-color: #18C954 ;
+  background-color: #DEFAEF;
+  color: #442ab9;
 }
 
 .button-better-green {
     color: #ffffff;
-    background-color: #5edeb3;
+    background-color: red;
     padding: 1.8rem 2.8rem 2rem;
     line-height: 1.2;
   }
-
-.button-bgcolor-red {
-  color: #fff;
-  background-color: #442ab9; 
-  padding: 2rem 3rem;
-  display: inline-block;
-  position: relative;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-transform: uppercase; 
-}
 
 .button-nav {
   align-items: center;

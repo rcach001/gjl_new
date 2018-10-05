@@ -1,67 +1,82 @@
 {% extends "layouts/default.html" %}
 
+     
+
 {% block content %}
   <header class="post-header">
       <div class="container">
         <div class="post-header__content">
           <h1>Post a Job</h1>
           <br />
-            <h3>For all job listings, you'll pay <strong>once</strong> per each listing, which last for 30 days.</h3>
-
-            <br /><h3>All listings will be approved and posted within 24 hours.</h3>
+            <h3>Thanks for choosing Growth Jobs List! Please follow the next steps to get your job listed.👇 
         </div>
         <br />
         <br />
-        <h3> Step 1: Fill out the form</h3>
-        
-        <br/>
-
-        <button class="button button-fontcolor" onclick="myFunction()">Fill Form</button>
+        <h3><u>Step 1</u>: Fill out the form</h3>
+        <br />
         <br />
 
-        <div id="myDIV" style="display:none">
-
+      <div class="container">
         <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-        <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shr5nIHvygSQviV86?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; padding-bottom: 10px;"></iframe>
-        </div>
+        <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shr5nIHvygSQviV86?backgroundColor=purple" frameborder="2" onmousewheel="" width="100%" height="inherit" style="background: transparent; padding-bottom: 10px;"></iframe>
+      </div>
 
-        <script>
-          function myFunction() {
-           var x = document.getElementById("myDIV");
-           if (x.style.display === "none") {
-            x.style.display = "block";
-           } else {
-            x.style.display = "none";
-                }
-            }
-        </script>
-      
+      <br />
       <br />
     <div class="post-header__content_step"> <!--check width-->
       <div class="container">
-        <h3> Step 2: Payment</h3>
         <br />
-        <h3> There are two types of job listings available.</h3>
-      <br />
+        <h3> <u>Step 2</u>: Select Listing Package</h3>
+        <br />
+        
+        <h3>Here's a few things to know first:</h3>
+              <ul class="list-select-packages">
+                <li>✅ You're paying for <strong>one</strong> job listing.</li>
+                <li>✅ All job listings will stay up for 30 days.</li>
+    
+                </ul>
+        <h3>Now, choose one of the following packages:</h3>
+        <br />
 
-    <div class=" thumb-list thumb-list--two">
+    <div class="thumb-list-featured">
       <div class="container">
-      <ul>
-         <li> <a href="/paymentv"><button class="button-bgcolor-gr color-hover"> Featured ($99) </button></a></li>
-        
-        <br />
-        
-        
-        <li><a href="/payment" class="white-override-color"><button class="button-bgcolor-gr color-hover"> Basic <a class="strikethrough">($99)</a></button></a><i> <a class="">FREE for limited time!</a></i></li>
-      </ul>
+        <ul class="list-select-packages-button-grid">
+         
+          <h2> Featured Package - $99 </h2>
+            <li><p class="content-packages">> 1 Job Listing (live for 30 days)</p></li>
+            <li><p class="content-packages">> 8 Shoutouts on Twitter (~2/w)</p></li>
+            <li><p class="content-packages">> Added to FOUR Weekly Newsletter at Top</p></li>
+            <li><p class="content-packages">> publish 350 word blog post on Medium</p></li>
+            <li><p class="content-packages">> Live for 30 Days</p></li>
+            <li><p class="content-packages">> Free Support</p></li>
+            <li><p class="content-packages">> Option to renew (30d) similar for $99</p></li>
+            <li><p class="content-packages">> Published immediately</p></li>
+            <br />
+            <li> <a href="/paymentv"><button class="button-bgcolor-gr color-hover">Post Featured Job</button></a></li>
+          </ul>
+
+        <ul class="list-select-packages-button-grid">
+          
+          <h2> Basic Package -<a class="strikethrough">$49</a> (FREE FOR 24 HRS) </h2>
+
+            <li><p class="content-packages">> 1 Job Listing (live for 30 days)</p></li>
+            <li><p class="content-packages">> 4 Shoutouts on Twitter (~2/w) </p></li>
+            <li><p class="content-packages">> Added to TWO Weekly Newsletter</p></li>
+            <li><p class="content-packages">> Free Support</p></li>
+            <li><p class="content-packages">> Published 24-48 hours2 Job Listing</p></li>
+            <li><p class="content-packages">> FOMO by choosing Basic!</p></li>
+            <br />
+            <li> <a href="/payment"><button class="button-bgcolor-gr color-hover">Post Basic Job</button></a></li>
+
+        </ul>
       </div>
+    </div>
+    
       
-      <h3> What does Choose Plan to expect?</h3>
+    
 
     </div>
-    </div>
-
-    </div>
+  </div>
 
   </header>
 
