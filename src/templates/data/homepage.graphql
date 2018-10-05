@@ -25,6 +25,7 @@ query {
     }
     featuredPost {
       title
+      _enabledAt
       featuredImage {
         path
       }
@@ -34,6 +35,7 @@ query {
     }
     posts {
       title
+      _enabledAt
       featuredImage {
         path
       }

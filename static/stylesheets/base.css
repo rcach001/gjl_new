@@ -252,6 +252,34 @@ small {
 
 }
 
+.container-p-featuredpost {
+  display: flex;
+  background-color: #ffff9575;
+  width: 21.5rem; 
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+
+.container-p-basicpost {
+  display: flex;
+  background-color: #ffff9575;
+  width: 21.5rem; 
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.container-p-tweet {
+  display: flex;
+  width: 30rem; 
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 /*@media only screen and (max-width: 500px) {
   .container-mc-aligned {
   padding-left: 8rem;

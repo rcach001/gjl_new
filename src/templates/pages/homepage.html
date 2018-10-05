@@ -44,7 +44,7 @@
               <div class="tout__content color">
                 <h5>{{ fpost.title }}</h5>
                 <p>
-                   <time>{{ fpost._enabledAt | date("MMMM D, YYYY" )}}</time>
+                   <time>added on: {{ fpost.enabledAt | date("MMMM D, YYYY" )}}</time>
                   
                 </p>
                 
@@ -75,7 +75,7 @@
               <div class="tout__content color">
                 <h5>{{ post.title }}</h5>
                 <p>
-                  <time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time>
+                  <time>added on: {{ post._enabledAt | date("MMMM D, YYYY") }}</time>
                   
                 </p>
                

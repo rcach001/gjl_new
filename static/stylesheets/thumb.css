@@ -14,8 +14,8 @@
   flex-wrap: wrap;
   position: relative;
   left: -1.6rem;
-  margin-top: 3.2rem;
-  width: calc(100% + 3.2rem);
+  margin-top: 3.4rem;
+  width: calc(100% + 3rem);
 }
 
 .thumb-list li {
@@ -31,11 +31,11 @@
 }
 
 .thumb-list--two li:nth-child(n+3) {
-  margin-top: 3.2rem;
+  /*margin-top: 3.2rem;*/
 }
 
 .thumb-list--three li:nth-child(n+20) {
-  margin-top: 3.2rem;
+  /*margin-top: 3.2rem;*/
 }
 
 .thumb-list img {
