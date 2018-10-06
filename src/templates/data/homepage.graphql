@@ -42,6 +42,8 @@ query {
       author {
         name
       }
+      linkUrl
+      _id
     }
   }
 }
