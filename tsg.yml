@@ -42,7 +42,7 @@ routes:
     context: data/paymentv.graphql
 
   post:
-    path: /jobs/:title/
+    path: /jobs/:linkUrl/
     template: pages/posts/individual.html
     paginate:
       pageSize: 50
@@ -53,7 +53,7 @@ routes:
       itemName: post
 
   featuredpost:
-    path: /fjobs/:title/
+    path: /fjobs/:linkUrl/
     template: pages/fposts/individual.html
     paginate:
       pageSize: 50
