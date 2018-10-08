@@ -14,10 +14,7 @@
             <a href="{{ location | route('locations') }}" class="tout">
 
               <div class="tout__content color">
-                <h3>{{ location.author.name }}</h3>
-                <p>
-                  <time>{{ location._enabledAt | date("MMMM D, YYYY") }}</time>
-                </p>
+                <h3>{{ location.name }}</h3>
 
               </div>
             </a>
