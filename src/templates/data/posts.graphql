@@ -22,6 +22,7 @@ query {
         locationaut {
           name
         }
+        website
       }
       featuredImage {
         path
