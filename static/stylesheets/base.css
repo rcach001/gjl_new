@@ -259,6 +259,11 @@ p {
   line-height: 3.75rem;
 }
 
+.container-p-featuredpost-font  {
+  font-size: 1.75rem;  
+  opacity: .9;
+}
+
 small {
   font-size: 1.4rem;
 }
@@ -284,6 +289,21 @@ small {
 
 }
 
+
+@media only screen and (min-width:561px ){
+  .nav-container-new {
+  padding-bottom: 2.25rem;
+  }
+}
+
+@media only screen and (max-width:560px ){
+  .nav-container-new {
+  padding-bottom: 2.5rem;
+  display: none;
+  }
+}
+
+
 .container-p-featuredpost {
   display: flex;
   background-color: #ffff9575;
@@ -293,7 +313,6 @@ small {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
-
 
 
 .container-p-basicpost {
