@@ -17,7 +17,7 @@
         <p><span><strong>added on:</strong> {{ fpost._enabledAt | date("MMMM D, YYYY") }}</span></p>
         <p><span><strong>site:</strong> <a href="{{ fpost.author.website }}" target="_blank"> {{ fpost.author.website }}</a></span></p>
 
-        <p class="container-p-tweet">📣 Tweet this job:</p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <p class="container-p-tweet">📣 Tweet this job:</p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="📣 New Featured Job Alert: {{ post.title }} at {{post.author.name}}" data-hashtags="growthjobslist,digitalmarketing">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         <!--<p><strong>Location:</strong> {{ fpost.location.location }}</p>-->
 
