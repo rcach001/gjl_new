@@ -205,7 +205,14 @@ img {
 
 /* Typography */
 h1,
-h2,
+h2
+  {
+}
+
+  .h2-toh1look {
+  font-size: 5rem;
+}
+
 h3 {
   font-weight: 500;
 }
@@ -258,6 +265,13 @@ p {
 
 .content-packages {
   color: black;
+  line-height: 3.75rem;
+}
+
+.content-packages-underbutton {
+  color: black;
+  font-size: 1.2rem;
+  font-style: italic;
   line-height: 3.75rem;
 }
 
