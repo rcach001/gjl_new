@@ -35,7 +35,7 @@
 }
 
 .pagination a.is-current {
-  border-bottom: 3px solid #442ab9;
+  border-bottom: 2px solid #442ab9;
 }
 
 .pagination a.is-disabled {
