@@ -4,38 +4,32 @@
   <header class="post-header">
     <div class="container">
       <div class="nav-container-new">
-        <a href="/"><p class="container-p-featuredpost-font">← Back</p></a>
+        <a href="/blog"><p class="container-p-featuredpost-font">← Blog</p></a>
       </div>
       <div class="post-header__content">
         <!--<p class="container-p-basicpost"> Feature this job! </p> -->
-        <h2>{{ post.title }}</h2>
+        <h2>{{ blogposts.title }}</h2>
         
-        <p><a href="{{ post.author.name | route('name') }}"><strong>at</strong> {{ post.author.name }}</a></p>
-        
-        <p><span><strong>added on:</strong> {{ post._enabledAt | date("MMMM D, YYYY") }}</span></p>
-        <p><span><strong>site:</strong> <a href="{{ post.author.website }}" target="_blank"> {{ post.author.website }}</a></span></p>
-        
-        <p class="container-p-tweet">📣 Tweet this job:</p>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="📣 New Job Alert: {{ post.title }} at {{post.author.name}}" data-hashtags="growthjobslist,digitalmarketing"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        <!--<p><strong>Location:</strong> {{ post.locationaut }}</p>-->
-        
-        {% if post.tags |  length %}<p>
-          Tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}{{ tag.name }}{% endfor %}</p>{% endif %}
+        <p><span>published on: {{ blogposts._enabledAt | date("MMMM D, YYYY") }}</span></p>
+       <br /> 
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="{{ blogposts.title }}" data-hashtags="growth, digitalmarketing"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+    <br />
+      <div class="content">
+        <div class="container">
+          <p><span>{{ blogposts.blogcontentHtml | safe }}</span></p>
+        </div>
+      </div>
   </header>
 
-  <div class="content">
-    <div class="container">
-      <a href="{{ post.linkUrl }}" class="button button-fontcolor" target="_blank">Apply Now</a>
-      {{ post.bodyHtml | safe }}
-      <a href="{{ post.linkUrl }}" class="button button-fontcolor" target="_blank">Apply Now</a>
-    </div>
-  </div>
+  
   <br />
+  
   <div class="container">
+  
   <hr>
+  
   <br />
   <br />    
         <div id="mc_embed_signup">

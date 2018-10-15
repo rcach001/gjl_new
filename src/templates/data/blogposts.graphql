@@ -1,0 +1,15 @@
+query {
+  getBlogpostsList(sort: [{field: "_enabledAt", order: "desc"}]) {
+    total
+    items {      
+      _contentTypeName
+      _enabledAt
+      _createdAt
+      title
+      blogcontentHtml
+      blogImage {
+        path
+      }
+    }
+  }
+}

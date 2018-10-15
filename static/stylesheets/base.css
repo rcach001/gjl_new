@@ -254,6 +254,11 @@ h5 {
   
   }
 
+h6 {
+  font-size: 1.5rem;
+  
+}
+
 p {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -278,6 +283,11 @@ p {
 .container-p-featuredpost-font  {
   font-size: 1.75rem;  
   opacity: .9;
+}
+
+.p-footer {
+  font-size: 1.75rem;
+  color: black;
 }
 
 small {

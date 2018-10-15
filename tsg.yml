@@ -73,3 +73,14 @@ routes:
       template: pages/locations/landing.html
       data: data/locations.graphql
       itemName: location
+
+  blogposts:
+    path: /blog/:title/
+    template: pages/blogposts/individual.html
+    paginate:
+      pageSize: 30
+      path: /blog/page-:num/
+      firstPage: /blog/
+      template: pages/blogposts/landing.html
+      data: data/blogposts.graphql
+      itemName: blogposts   
