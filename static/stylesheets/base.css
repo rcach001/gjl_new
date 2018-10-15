@@ -210,7 +210,7 @@ h2
 }
 
   .h2-toh1look {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -261,7 +261,13 @@ h6 {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.3;
+}
+
+.h2-toh1look {
+  font-size: 2.75rem;
+  font-weight: 800;
+
 }
 
 .content-block-c {
@@ -409,7 +415,7 @@ small {
 /* Buttons */
 .button {
   background-color: #442ab9;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   display: inline-block;
   position: relative;
   font-size: 1.4rem;
@@ -455,7 +461,7 @@ small {
   align-items: center;
   color: #fff;
   font-size: 1.4rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
 
 }
 
