@@ -270,6 +270,14 @@ p {
 
 }
 
+.blog-excerpt {
+  width : 100px;
+  overflow:hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .content-block-c {
   color: #DEFAEF;
 }

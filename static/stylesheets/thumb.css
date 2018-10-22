@@ -31,6 +31,15 @@
   width: calc(100% + 3rem);
 }
 
+.thumb-list-blog ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: -1.6rem;
+  margin-top: 3.2rem;
+  width: calc(100% + 3rem);
+}
+
 .thumb-list li {
   padding: 0 1.6rem;
 }

@@ -45,7 +45,6 @@
                 <h5>{{ fpost.title }}</h5>
                 <p>
                    <time>added on: {{ fpost._enabledAt | date("MMMM D, YYYY" )}}</time>
-                  
                 </p>
                 
               </div>
@@ -76,7 +75,6 @@
                 <h5>{{ post.title }}</h5>
                 <p>
                   <time>added on: {{ post._enabledAt | date("MMMM D, YYYY") }}</time>
-                  
                 </p>
                
               </div>
@@ -122,6 +120,7 @@
     </div>
   </div>
 
+  <!--
     <div class="container">
       
       <div class="container-growth-hp">
@@ -132,24 +131,32 @@
       </div>
     </div>
 
-  <div class="content content-block">   
+  <div class="thumb-list-blog thumb-list--two">
     <div class="container">
       <div>
-        <p>Like Paul Graham from Y Combinator wrote in his famous blog post <a href="http://www.paulgraham.com/growth.html" target="_blank">"Startup = Growth"</a>:</p>
+        <p>A collection of essays on growth & marketing, and startups.</p>
       <br />
-        <div>
-          <aside class="pullquote">
-          <blockquote>A startup is a company designed to grow fast. Being newly founded does not in itself make a company a startup. Nor is it necessary for a startup to work on technology, or take venture funding, or have some sort of "exit." The only essential thing is growth.</blockquote></aside>
-          <br />
-          <p>With GrowthJobsList, we're in the pursuit of matching growth & marketing people with startups and tech companies.</p>
-          <br /><h3><strong>Growth helps keep companies alive!</strong></h3>
-        </div>
+          <ul>
+            {% for blogposts in page.blogposts %}
+            <li>
+              <a href="{{ blogposts | route('blogposts') }} " class="tout">
+                <div>
+                  <img src="{{ blogposts.blogImage | image}} ">
+                </div>
+            
+                <div class="tout__content color">
+                  <h4>{{ blogposts.title }}</h4>
+                  <p class="blog-excerpt">Having gone through the process of hiring growth & marketing</p>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        
       </div>
-      <!-- <div>
-        <img src="{{ page.introduction.image | image }}">
-      </div> -->
     </div>
   </div>
+    -->
   
   <div align="center" class="content-block">
     <a href="/contact" target="_blank"><button class="button button-nav">Post a Job</button></a>

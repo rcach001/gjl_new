@@ -45,5 +45,13 @@ query {
       }
       linkUrl
     }
+    blogposts {
+      title
+      _enabledAt
+      blogImage {
+        path
+      }
+      blogcontentHtml
+    }
   }
 }
